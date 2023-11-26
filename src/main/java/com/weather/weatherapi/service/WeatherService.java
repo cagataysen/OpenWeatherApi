@@ -14,7 +14,7 @@ public class WeatherService {
     private final String apiUrl = "http://api.openweathermap.org/data/2.5/weather";
 
     public String getWeatherData(String city) {
-        String url = String.format("%s?q=%s&appid=%s", apiUrl, city, apiKey);
+        String url = String.format("%s?q=%s&appid=%s&units=metric", apiUrl, city, apiKey);
 
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url, String.class);
