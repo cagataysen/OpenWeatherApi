@@ -1,10 +1,6 @@
 # OpenWeatherApi
 
 
-key: 67719386abc3d09b776d101463538102
-
-https://api.openweathermap.org/data/2.5/weather?q=istanbul&appid=67719386abc3d09b776d101463538102
-
 we will get the city name as parameter: e.g.: istanbul
 Using postman here lets try out if the get api url works.
 ![img.png](img.png)
