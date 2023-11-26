@@ -11,7 +11,8 @@ public class WeatherService {
     @Value("${openweathermap.api.key}")
     private String apiKey;
 
-    private final String apiUrl = "http://api.openweathermap.org/data/2.5/weather";
+    @Value("${openweathermap.api.url}")
+    private String apiUrl;
 
     public String getWeatherData(String city) {
         String url = String.format("%s?q=%s&appid=%s&units=metric", apiUrl, city, apiKey);
