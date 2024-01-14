@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class WeatherService {
-
+    //try catch konulacak.
     @Value("${openweathermap.api.key}")
     private String apiKey;
 
